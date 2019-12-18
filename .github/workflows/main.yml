@@ -15,9 +15,9 @@ jobs:
         echo test, and deploy your project.
   wait:
     needs: [build]
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
-      - name: wait
+      - name: say Yay
         run: |
           - echo Yaj!!
         
