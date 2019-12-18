@@ -19,5 +19,5 @@ jobs:
     steps:
       - name: say Yay
         run: |
-          - echo Yaj!!
+          echo Yaj!!
         
