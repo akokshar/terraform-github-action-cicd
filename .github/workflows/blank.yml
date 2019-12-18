@@ -1,13 +1,19 @@
-name: CI
+name: CI pull_request
 
 on: [pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hiii
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approve
+        uses: kunihiko-t/review-request-action@v0.1.3
+        with:
+          repo-token: "token"
+          reviewers: "president"
