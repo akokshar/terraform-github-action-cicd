@@ -19,7 +19,7 @@ jobs:
       - name: Approve
         uses: kunihiko-t/review-request-action@v0.1.3
         with:
-          repo-token: ${{ secrets.TOKEN }}
+          repo-token: "token"
           reviewers: "president"
   deploy:
     needs: [review]
